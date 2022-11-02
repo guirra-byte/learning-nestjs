@@ -1,0 +1,17 @@
+POST https://3000-guirrabyte-learningnest-e5izrs903u9.ws-us73.gitpod.io/players HTTP/1.1
+content-type: application/json
+
+{
+   "phoneNumber": "9289756",
+   "name": "Mabel",
+   "email": "mabelguirra@gmail.com",
+   "password": "Mabel085213.",
+}
+
+###
+GET https://3000-guirrabyte-learningnest-e5izrs903u9.ws-us73.gitpod.io/players HTTP/1.1
+
+###
+GET https://3000-guirrabyte-learningnest-e5izrs903u9.ws-us73.gitpod.io/players/2 HTTP/1.1
+###
+DELETE https://3000-guirrabyte-learningnest-e5izrs903u9.ws-us73.gitpod.io/players/2 HTTP/1.1

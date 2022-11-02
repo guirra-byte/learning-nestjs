@@ -6,14 +6,18 @@ import {
   Get,
   Patch,
   Delete,
+  HttpCode,
 } from '@nestjs/common';
 import { CreatePlayerDto } from './dtos/create-player.dto';
+import { PlayersService } from './players.service';
 
 @Controller('players')
 export class PlayersController {
-  @Post('new')
+  constructor(private readonly playersService: PlayersService) {}
+  @HttpCode(200)
+  @Post()
   async createUpdatePlayer(@Body() createPlayerDto: CreatePlayerDto) {
-    return JSON.stringify(createPlayerDto);
+    return this.playersService.createUpdatePlayer(createPlayerDto);
   }
 
   @Get(':id')
@@ -69,5 +73,7 @@ export class PlayersController {
 
       return undefined;
     }
+
+    return players;
   }
 }
