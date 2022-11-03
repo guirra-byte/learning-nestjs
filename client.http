@@ -13,5 +13,6 @@ GET https://3000-guirrabyte-learningnest-e5izrs903u9.ws-us73.gitpod.io/players H
 
 ###
 GET https://3000-guirrabyte-learningnest-e5izrs903u9.ws-us73.gitpod.io/players/2 HTTP/1.1
+
 ###
 DELETE https://3000-guirrabyte-learningnest-e5izrs903u9.ws-us73.gitpod.io/players/2 HTTP/1.1
